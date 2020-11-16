@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>json格式化工具</title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jsonfm.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/btn.css">
+		<link rel="stylesheet" href="css/asidenav.css">
+</head>
+<body>
+	<center>
+			<h1>
+				JSON格式化工具
+			</h1>
+			<textarea id="baseText" style="width:900px;height:500px" ></textarea>
+			<br>
+			<input class="btn_sub" type="button" name="mybtn" value="格式化json" onclick="format()" />
+		</center>
+			<svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <div class="aside-nav bounceInUp animated" id="aside-nav">
+        <label for="" class="aside-menu" title="按住拖动">菜单</label>
+
+        <a href="htmlfm.html" title="格式化HTML" class="menu-item menu-first">美化<br>HTML</a>
+        <a href="jsonfm.html" title="格式化JSON" class="menu-item menu-second">美化<br>JSON</a>
+        <a href="textcmp.html" title="文本对比" class="menu-item menu-third">文本<br>对比</a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=835476090&site=qq&menu=yes" title="联系作者" class="menu-item menu-line menu-fourth">联系<br>作者</a> 
+    </div>
+</div>    
+<!--
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/asidenav.js"></script>
+-->
+</div>
+</body>
+</html>

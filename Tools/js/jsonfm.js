@@ -1,0 +1,1 @@
+function format(){var str=$('#baseText').val();if (str.trim()=='') {return;}try{var jsonpar=JSON.parse(str);var jsonfm=JSON.stringify(jsonpar,null,'\t');$('#baseText').val(jsonfm);$('#baseText').css("background-color","#E6EFC2");}catch(err){$('#baseText').css("background-color","#FBE3E4");alert("json格式化错误,可能格式正确,请确认您的json串是否正确")}}
